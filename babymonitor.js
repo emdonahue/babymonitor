@@ -25,6 +25,12 @@ var parentconn;
 function setup() {
     document.getElementById('babyoffer').value = '';
     document.getElementById('parentanswer').value = '';
+    window.addEventListener('error', function(e) {
+	var p = document.createElement('p');
+	console.log(e);
+	p.innerHTML = e.message;
+	document.getElementById('debug').appendChild(p);
+    });
 }
 
 function offer() {
@@ -45,7 +51,7 @@ pc.createOffer().then(offer => {
   pc.setLocalDescription(offer);
 });
     return;*/
-    
+    null.a.b = 'c'; 
     var stream = navigator.mediaDevices.getUserMedia({video: true, audio: true});
     var icecandidates = [];
     var offer;
