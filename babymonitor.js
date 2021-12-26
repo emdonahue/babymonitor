@@ -24,13 +24,7 @@ var parentconn;
 
 function setup() {
     document.getElementById('babyoffer').value = '';
-    document.getElementById('parentanswer').value = '';
-    window.addEventListener('error', function(e) {
-	var p = document.createElement('p');
-	console.log(e);
-	p.innerHTML = e.message;
-	document.getElementById('debug').appendChild(p);
-    });
+    document.getElementById('parentanswer').value = '';    
 }
 
 function offer() {

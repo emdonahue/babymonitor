@@ -18,6 +18,14 @@
     <div id="debug" style="color:red">
     </div>
     <script type="text/javascript">
+    window.addEventListener('error', function(e) {
+	var p = document.createElement('p');
+	console.log(e);
+	p.innerHTML = e.message;
+	document.getElementById('debug').appendChild(p);
+    });
+    </script>
+    <script type="text/javascript">
       setup();
     </script>
   </body>
