@@ -45,7 +45,6 @@ pc.createOffer().then(offer => {
   pc.setLocalDescription(offer);
 });
     return;*/
-    null.a.b = 'c'; 
     var stream = navigator.mediaDevices.getUserMedia({video: true, audio: true});
     var icecandidates = [];
     var offer;
