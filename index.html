@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <script src="babymonitor.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="babycam">
+      <button id="connectcam" onclick="offer()">Connect Babycam</button>
+      <textarea id="babyoffer"></textarea>
+      <button id="startcam" onclick="confirm()">Start Babycam</button>
+    </div>
+    <div id="parentmonitor">
+      <video id="parentvid" autoplay></video>
+      <button id="startparentvid" onclick="answer()">Start</button>
+      <textarea id="parentanswer"></textarea>
+    </div>
+    <script type="text/javascript">
+      setup();
+    </script>
+  </body>
+</html>
