@@ -25,6 +25,10 @@
 	p.innerHTML = e.message + (e.lineNumber ? ('(' + e.lineNumber + ')') : '') + (e.stack ? (' stack: ' + e.stack) : '');
 	document.getElementById('debug').appendChild(p);
     });
+
+    for (var k in navigator) {
+    document.write(k + ' ');
+    }
     </script>
     <script type="text/javascript">
       setup();
