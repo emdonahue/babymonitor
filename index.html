@@ -5,7 +5,7 @@
     <script src="babymonitor.js" type="text/javascript"></script>
   </head>
   <body>
-    <p>v2</p>
+    <p>v4</p>
     <div id="babycam">
       <button id="connectcam" onclick="offer()">Connect Babycam</button>
       <textarea id="babyoffer"></textarea>
@@ -22,7 +22,7 @@
     window.addEventListener('error', function(e) {
 	var p = document.createElement('p');
 	console.log(e);
-	p.innerHTML = e.message + (e.line ? ('(' + e.line + ')') : '') + (e.stack ? (' stack: ' + e.stack) : '');
+	p.innerHTML = e.message + (e.lineNumber ? ('(' + e.lineNumber + ')') : '') + (e.stack ? (' stack: ' + e.stack) : '');
 	document.getElementById('debug').appendChild(p);
     });
     </script>

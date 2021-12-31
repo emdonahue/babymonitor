@@ -29,6 +29,10 @@ if (navigator.mediaDevices) {
 if (navigator.getUserMedia) document.write('<p>navigator.getUserMedia</p>');
 if (navigator.mozGetUserMedia) document.write('<p>navigator.mozGetUserMedia</p>');
 
+for (var k in navigator) {
+    document.write(k);
+}
+
 function setup() {
     document.getElementById('babyoffer').value = '';
     document.getElementById('parentanswer').value = '';   
