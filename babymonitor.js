@@ -22,9 +22,15 @@ var babyconn;
 
 var parentconn;
 
+if (navigator.mediaDevices) {
+    document.write('<p>navigator.mediaDevices</p>');
+    if (navigator.mediaDevices.getUserMedia) document.write('<p>navigator.mediaDevices.getUserMedia</p>');
+}
+if (navigator.getUserMedia) document.write('<p>navigator.getUserMedia</p>');
+
 function setup() {
     document.getElementById('babyoffer').value = '';
-    document.getElementById('parentanswer').value = '';    
+    document.getElementById('parentanswer').value = '';   
 }
 
 function offer() {
