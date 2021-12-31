@@ -22,7 +22,7 @@
     window.addEventListener('error', function(e) {
 	var p = document.createElement('p');
 	console.log(e);
-	p.innerHTML = e.message + (e.stack ? (' ' + e.stack) : '');
+	p.innerHTML = e.message + (e.stack ? (' stack: ' + e.stack) : '');
 	document.getElementById('debug').appendChild(p);
     });
     </script>
