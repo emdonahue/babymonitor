@@ -45,7 +45,7 @@ pc.createOffer().then(offer => {
   pc.setLocalDescription(offer);
 });
     return;*/
-    var stream = navigator.mediaDevices.getUserMedia({video: true, audio: true});
+    var stream = navigator.mediaDevices ? navigator.mediaDevices.getUserMedia({video: true, audio: true}) : navigator.getUserMedia({video: true, audio: true});
     var icecandidates = [];
     var offer;
     var conn = babyconn = new RTCPeerConnection();
