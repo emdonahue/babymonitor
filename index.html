@@ -26,9 +26,11 @@
 	document.getElementById('debug').appendChild(p);
     });
 
+    document.write('<p>');
     for (var k in navigator) {
     document.write(k + ' ');
-    }
+	}
+	document.write('</p>');
     </script>
     <script type="text/javascript">
       setup();
