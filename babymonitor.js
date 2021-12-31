@@ -27,6 +27,7 @@ if (navigator.mediaDevices) {
     if (navigator.mediaDevices.getUserMedia) document.write('<p>navigator.mediaDevices.getUserMedia</p>');
 }
 if (navigator.getUserMedia) document.write('<p>navigator.getUserMedia</p>');
+if (navigator.mozGetUserMedia) document.write('<p>navigator.mozGetUserMedia</p>');
 
 function setup() {
     document.getElementById('babyoffer').value = '';
